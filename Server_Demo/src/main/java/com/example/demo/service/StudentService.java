@@ -1,0 +1,17 @@
+package com.example.demo.service;
+
+import com.example.demo.dao.Student;
+import com.example.demo.dto.StudentDTO;
+
+public interface StudentService {
+
+    Student getStudentById(long id);
+
+    StudentDTO getStudentDTOById(long id);
+
+    Long addNewStudent(StudentDTO studentDTO);
+
+    void deleteStudentById(long id);
+
+    StudentDTO updateStudentDTO(long id, String name, String email);
+}

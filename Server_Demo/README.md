@@ -1,7 +1,11 @@
-# Backgroud
+# 1. Backgroud
+## Environment & Tools
+IDEA\
+JDK：通过 IDEA 中提供的 OpenJDK 亦可\
+Maven\
+Postman
 
-
-# Project Related
+# 2. Project Related
 
 ## Database Operate
 ### 启动MySQL
@@ -36,3 +40,19 @@ CREATE TABLE student (
 ```sql
 show tables;
 ```
+
+## Other
+### 工程打包
+```
+mvn clean install
+// 产物在工程的target目录下
+```
+### 启动产物
+```
+java -jar .\target\demo-0.0.1-SNAPSHOT.jar
+```
+### 修改启动端口
+```
+java -jar .\target\demo-0.0.1-SNAPSHOT.jar --server.port=8081
+```
+
